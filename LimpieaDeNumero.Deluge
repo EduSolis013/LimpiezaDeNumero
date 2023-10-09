@@ -1,0 +1,18 @@
+info numero;
+numero2 = numero.remove(" ");
+info numero2;
+CodigoPy = "+595";
+if(numero2.length() >= 9)
+{
+	if(numero2.startsWith("9"))
+	{
+		NewNum = CodigoPy + numero2;
+	}
+	else
+	{
+		info "ERROR EN EL NUMERO";
+	}
+	info NewNum;
+}
+
+return NewNum;
