@@ -4,12 +4,12 @@
 //info zoho.crm.getRecordById("Leads", 5687268000001904001); 
 info numero;
 numero2 = numero.remove(" ");
-numero2 = numero.removeAllAlpha();
-numero2 = numero.remove("-");
-numero2 = numero.remove(".");
-numero2 = numero.remove(",");
-numero2 = numero.remove(";");
-numero2 = numero.remove("_");
+numero2 = numero2.removeAllAlpha();
+numero2 = numero2.remove("-");
+numero2 = numero2.remove(".");
+numero2 = numero2.remove(",");
+numero2 = numero2.remove(";");
+numero2 = numero2.remove("_");
 info numero2;
 CodigoPy = "+595";
 if(numero2.length() >= 9)
