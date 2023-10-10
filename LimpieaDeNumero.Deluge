@@ -1,5 +1,15 @@
+//Buscar informacion sobre Jason
+//Obtener informacion de posible cliente mediante ID 5687268000001904001
+//Utilizar SDK de Zoho
+//info zoho.crm.getRecordById("Leads", 5687268000001904001); 
 info numero;
 numero2 = numero.remove(" ");
+numero2 = numero.removeAllAlpha();
+numero2 = numero.remove("-");
+numero2 = numero.remove(".");
+numero2 = numero.remove(",");
+numero2 = numero.remove(";");
+numero2 = numero.remove("_");
 info numero2;
 CodigoPy = "+595";
 if(numero2.length() >= 9)
@@ -8,11 +18,15 @@ if(numero2.length() >= 9)
 	{
 		NewNum = CodigoPy + numero2;
 	}
+	else if(numero.startsWith("0"))
+	{
+		New = numero2.remove(0);
+		NewNum = CodigoPy + New;
+	}
 	else
 	{
 		info "ERROR EN EL NUMERO";
 	}
 	info NewNum;
 }
-
 return NewNum;
